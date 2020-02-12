@@ -1,0 +1,448 @@
+html, body {
+    height: 160%;
+}
+body {
+    margin: 0;  padding: 0; background-attachment: fixed;
+    background-size: cover; background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(14, 14, 14);
+    display: flex; flex-direction: column;
+    /* border: 2px solid red; */
+}
+ /* ======= CONTAINER 1 =========== */
+.container-1 {
+     /* border: 2px solid white; */
+     height: 60px;  background-color: rgb(48, 48, 48);
+     display: flex; align-items: center; justify-content: space-between;
+    flex: 0 0 60px; position: fixed; width: 100%;
+ }
+.container-1 .c-1-d {
+    background-color: black; display: flex; align-items: center; justify-content: center;
+    height: 40px; width: 65px; margin-left: 40px;
+}
+.container-1 .c-1-d h1 {
+    color: white;   font-family: monospace; font-size: 1.9em; cursor: pointer;
+}
+.container-1 .c-1-d h1:hover {
+    color: rgb(197, 196, 196);
+}
+.container-1 .search {
+    width: 550px; height: 32px;
+    background-color: black;
+    font-size: 1.5em; background-color: black;
+    text-align: center; letter-spacing: 0.1em; font-family: monospace;
+    border: none; margin-left: 250px;
+}
+.container-1 .c-2-d {
+    /* border: 1px solid white;  */
+    margin-right: 20px;
+    width: 350px; height: 32px; display: flex; align-items: center; 
+    justify-content: space-around;
+}
+.container-1 .c-2-d input {
+    height: 100%; width: 140px; text-align: center;
+    background-color: rgb(23, 120, 110);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    color: white; font-size: 1.1em;
+    font-weight: bolder;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.container-1 .c-2-d input:hover {
+    background-color: rgba(23, 120, 110, 0.774);
+}
+.container-1 .c-2-d .fas {
+    color: white;   font-size: 1.5em; margin-right: 20px;
+    cursor: pointer;
+}
+.container-1 .c-2-d .fas:hover {
+    color: rgb(197, 196, 196);
+}
+
+
+/*========================================================
+============== CONTAINER 2 ===============================
+========================================================== */
+
+main {
+    /* border: 3px solid white; */
+    flex: 1 0 auto;  
+    display: flex; flex-direction: row;
+    margin-top: 60px;
+    /* justify-content: space-around;   */
+}
+
+/* ===========  DIV 1 (LEFT SIDE) CONTENT =========== */
+
+main .main-div-1 {
+    /* border: 2px solid green; */
+    flex: 1 0 22%;
+    display: flex;  flex-direction: column; 
+}
+   
+/*============  PROFILE ============ */
+
+main .main-div-1 .profile {
+    border: 2px solid green;
+    flex: 0 0 auto;
+    margin: 30px;
+    display: flex;  align-items: center; 
+}
+main .main-div-1 .profile .fas {
+    /* border: 1px solid white; */
+    color: white;   font-size: 3em;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-grow: 1;
+}
+main .main-div-1 .profile div {
+    /* border: 1px solid white;     */
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px; 
+    flex-grow: 25;
+}
+main .main-div-1 .profile div p:nth-child(1) {
+    margin: 0; margin-bottom: 5px;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+main .main-div-1 .profile div p:nth-child(2) {
+    margin: 0; margin-top: 5px;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+
+/*============  NAV ============ */
+
+
+main .main-div-1 .nav {
+    border: 2px solid green;
+    flex: 0 0 auto;
+    margin: 30px;
+    display: flex; flex-direction: column; justify-content: center;
+}
+main .main-div-1 .nav a {
+    font-family: monospace;
+    color: gray;    font-size: 1.7em;
+    /* border: 1px solid white; */
+    padding: 20px;
+    padding-bottom: 0px;
+}
+main .main-div-1 .nav ul {
+    list-style-type: none;
+    padding: 0em;
+    /* border: 1px solid white; */
+    padding: 15px; padding-bottom: 0;
+}
+
+main .main-div-1 .nav ul li .fa-list {
+    color: purple;  
+}
+main .main-div-1 .nav ul li .fa-book {
+    color: goldenrod;
+}
+main .main-div-1 .nav ul li .fa-video {
+    color: rgb(129, 217, 247);
+}
+main .main-div-1 .nav ul li .fa-microphone-alt {
+    color: firebrick;
+}
+main .main-div-1 .nav ul li {
+    color: white;   font-family: monospace; font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+/*============  KEY ============ */
+
+
+
+main .main-div-1 .key {
+    border: 2px solid green;
+    flex: 0 0 auto;
+    margin: 30px;
+    display: flex; flex-direction: column;
+}
+main .main-div-1 .key a {
+    color: gray; font-size: 1.7em; font-family: monospace;
+    /* border: 1px solid white; */
+    padding: 20px;
+    /* padding-bottom: 0em; */
+}
+main .main-div-1 .key .ul1 {
+    display: flex;
+    /* border: 1px solid white; */
+    padding: 0em;
+    justify-content: space-around;
+}
+main .main-div-1 .key .ul1 i {
+    font-size: 2.7em; 
+}
+main .main-div-1 .key .ul1 i:nth-child(1) {
+    color: dodgerblue;
+}
+main .main-div-1 .key .ul1 i:nth-child(2) {
+    color: rgb(70, 70, 255); 
+}
+main .main-div-1 .key .ul1 i:nth-child(3) {
+    color: gray;
+}
+main .main-div-1 .key .ul1 i:nth-child(4) {
+    color: hotpink;
+}
+main .main-div-1 .key .ul2 {
+    /* border: 1px solid white; */
+    list-style-type: none;  color: white;  font-family: monospace;
+    padding: 0em;
+    display: flex;  flex-direction: column;
+}
+main .main-div-1 .key .ul2 li {
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+
+
+
+
+/* ===========  DIV 2 ( MIDDLE ) CONTENT =========== */
+
+
+
+
+
+
+
+
+main .main-div-2 {
+    /* border: 2px solid green; */
+    flex: 0 0 50%; 
+    display: flex;  flex-direction: column;
+    
+}
+
+/* ======= BUTTONS ======= */
+
+.date-btns {
+    /* margin: 30px; */
+    margin-top: 22px;
+    /* border: 2px solid green; */
+    display: flex;  align-items: center;    justify-content: space-around;
+    height: 50px;   width: 700px; margin-bottom: 20px;
+}
+.date-btns button {
+    width: 100px;    height: 30px;
+    font-family: monospace; font-size: 1.5em;   color: white;
+    background-color: rgb(14, 14, 14);  border: none;
+}
+.date-btns button:nth-child(1) {
+    background-color: royalblue;    
+}
+.date-btns button:hover {
+    background-color: royalblue;    cursor: pointer;
+}
+
+/* ======== MAIN ARTICLE ========= */
+
+.main-article {
+    border: 2px solid green;
+    display: flex;  flex-direction: column; 
+    margin-bottom: 15px;
+}
+.main-article span:nth-child(1) {
+    /* border: 2px solid green;     */
+    display: flex;  justify-content: center;
+}
+.main-article .m-a-img {
+    width: 100%;
+}
+.main-article span:nth-child(2) h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    color: white; font-weight: lighter;
+    margin-left: 15px;     cursor: pointer;
+}
+.main-article span:nth-child(2) h1:hover {
+    color: green;
+}
+.main-article span:nth-child(3) {
+    /* border: 2px solid green; */
+    display: flex; align-items: center; flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main-article span:nth-child(3) img {
+    width: 60px;
+}
+.main-article span:nth-child(3) p:nth-of-type(1){
+    color: white;   font-family: monospace; font-size: 1.4em;
+    margin-left: 5px;
+}
+.main-article span:nth-child(3) p:nth-of-type(1) i {
+    color: red; margin-left: 5px;
+}
+.main-article span:nth-child(3) p:nth-of-type(2) {
+    color: rgb(151, 150, 150);  font-family: monospace; font-size: 1.4em;
+    margin-left: 20px;
+}
+.main-article span:nth-child(3) p:nth-of-type(3) {
+    color: rgba(151, 150, 150, 0.459);  font-family: monospace; font-size: 1.2em;
+    margin-left: 8px;
+}
+.main-article span:nth-child(3) p:nth-of-type(4) {
+    padding: 0%; margin: 0%; margin-left: 65px;
+    color: rgb(151, 150, 150);  font-family: monospace; font-size: 1.4em;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.main-article span:nth-child(4) {
+    /* border: 2px solid green; */
+    display: flex;  align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.main-article span:nth-child(4) i {
+    color: red; flex-grow: 3;   font-size: 1.5em; cursor: pointer;
+    margin-left: 20px;
+}
+.main-article span:nth-child(4) p {
+    color: rgb(151, 150, 150);  font-family: monospace;
+    /* flex-grow: 0;    */
+    margin-right: 10px; font-size: 1.2em;
+}
+.main-article span:nth-child(4) button {
+    /* flex: 0; */  cursor: pointer;
+    background-color: royalblue; border: none; color: white;
+    padding: 7px; padding-right: 12px; padding-left: 12px;  
+    font-size: 1.3em; font-family: monospace;
+    margin-right: 20px;
+}
+
+
+/* ========== ARTICLE 1 ======== */
+.articles {
+    border: 2px solid green;    
+    display: flex; flex-direction: column;
+    margin-bottom: 15px;
+} 
+.articles span:nth-child(1) {
+    display: flex;  align-items: center; 
+    /* border: 2px solid green;     */
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.articles span:nth-child(1) h1 {
+    color: white; font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.articles span:nth-child(1) h1:hover {
+    color: green;
+}
+.articles span:nth-child(1) img {
+    width: 8.5%;    height: 5%;
+}
+.articles span:nth-child(2) {
+    /* border: 2px solid green;     */
+    display: flex; align-items: center;
+    padding-left: 60px;
+    padding-left: 80px;
+    padding-right: 20px;
+
+}
+.articles span:nth-child(2) p:nth-of-type(1) {
+    color: white;   font-family: monospace; font-size: 1.4em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+} 
+.articles span:nth-child(2) p:nth-of-type(2) {
+        color: rgb(151, 150, 150);  font-family: monospace; font-size: 1.4em;
+        margin-left: 20px;
+        margin-bottom: 0%;
+        margin-top: 0%;  
+}
+.articles span:nth-child(2) p:nth-of-type(3) {
+        color: rgba(151, 150, 150, 0.459);  font-family: monospace; font-size: 1.2em;
+        margin-left: 8px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+}
+.articles span:nth-child(3) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.articles span:nth-child(3) p {
+    padding: 0%; margin: 0%; margin-left: 60px;
+    margin-top: 5px;
+    color: rgb(151, 150, 150);  font-family: monospace; font-size: 1.4em;
+}
+.articles span:nth-child(4)  {
+    display: flex; align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.articles span:nth-child(4) i {
+    color: red; flex-grow: 3;   font-size: 1.5em; cursor: pointer;
+    margin-left: 20px;
+}
+.articles span:nth-child(4) p {
+    color: rgb(151, 150, 150);  font-family: monospace;
+    /* flex-grow: 0;    */
+    margin-right: 10px; font-size: 1.2em;
+}
+.articles span:nth-child(4) button {
+    /* flex: 0; */  cursor: pointer;
+    background-color: royalblue; border: none; color: white;
+    padding: 7px; padding-right: 12px; padding-left: 12px;  
+    font-size: 1.3em; font-family: monospace;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========  DIV 3 ( right side ) CONTENT =========== */
+
+
+
+
+
+main .main-div-3 {
+    /* border: 2px solid red; */
+    flex: 0 0 25%;
+}
+
+
+
+
+
+
+
+/*========================================================
+============== CONTAINER 3 ===============================
+========================================================== */
+
+footer {
+    border: 1px solid green;
+    flex: 0 0 85px;
+}
